@@ -1,0 +1,149 @@
+@font-face {
+	font-family: "Norse Bold";
+	src: url("/fonts/Norse-Bold.otf");
+}
+
+body {
+	font-family: Verdana, sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-color: whitesmoke;
+}
+
+.container {
+	display: flex;
+}
+
+.image-container {
+	width: 40vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+img {
+	height: 100vh;
+	overflow: auto;
+}
+
+.container-image-odin {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.379);
+	top: 10rem;
+}
+
+.container-image-odin img {
+	height: 200px;
+}
+
+.container-image-odin span {
+	font-size: 7rem;
+	color: white;
+	font-family: "Norse Bold";
+}
+
+main {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.main-container {
+	width: 40vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+form {
+	border-radius: 15px;
+	background-color: white;
+	width: 100%;
+	padding: 2rem;
+}
+
+form label {
+	display: block;
+	font-size: 0.8rem;
+}
+
+form input {
+	width: 100%;
+	height: 2rem;
+	font-size: 1.3rem;
+	border-radius: 3px;
+	border: 1px solid #e5e7eb;
+}
+
+input:focus:invalid {
+	border: 2px solid red;
+}
+
+input:valid {
+	border: 2px solid green;
+}
+
+form button {
+	padding: 1rem 3rem;
+	background-color: #596d48;
+	color: white;
+	border-radius: 5px;
+}
+
+form button:hover {
+	background-color: #3d4b31;
+}
+
+.form-row {
+	display: flex;
+	gap: 5rem;
+	margin-bottom: 2rem;
+}
+
+.main-text {
+	font-size: 1.2rem;
+	line-height: 1.5rem;
+}
+
+@media only screen and (max-width: 1000px) {
+	.container {
+		flex-direction: column;
+	}
+	.tree-background {
+		display: none;
+	}
+	.main-container {
+		width: 90vw;
+		justify-content: flex-start;
+		margin-top: 3rem;
+	}
+	.image-container {
+		width: 100vw;
+	}
+	.container-image-odin {
+		position: static;
+		padding: 2rem 0;
+	}
+	.main-text {
+		margin-bottom: 2rem;
+	}
+	form {
+		width: 80%;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	.form-row {
+		flex-direction: column;
+		gap: 20px;
+	}
+}

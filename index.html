@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles.css" />
+		<script src="script.js" defer></script>
+		<title>Document</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="image-container">
+				<img
+					src="/pictures/tree.jpg"
+					alt="picture of leafs"
+					class="tree-background"
+				/>
+				<div class="container-image-odin">
+					<img src="/pictures/odin-lined.png" alt="odin logo" />
+					<span>ODIN</span>
+				</div>
+			</div>
+			<main>
+				<div class="main-container">
+					<div class="main-text">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Nostrum vero deserunt adipisci, quibusdam iusto
+						consectetur quas cupiditate magnam non! Officia odit
+						facilis quas? Quia maiores voluptatum consequatur magni
+						ipsam possimus!
+					</div>
+					<form>
+						<h2>Register</h2>
+						<div class="form-row">
+							<div>
+								<label for="first-name">FIRST NAME</label>
+								<input
+									type="text"
+									id="first-name"
+									required
+									minlength="2"
+									placeholder="John"
+								/>
+							</div>
+							<div>
+								<label for="last-name">LAST NAME</label>
+								<input
+									type="text"
+									id="last-name"
+									required
+									minlength="2"
+									placeholder="Doe"
+								/>
+							</div>
+						</div>
+						<div class="form-row">
+							<div>
+								<label for="email">EMAIL</label>
+								<input
+									type="email"
+									id="email"
+									required
+									placeholder="test@example.com"
+								/>
+							</div>
+							<div>
+								<label for="phone">PHONE NUMBER</label>
+								<input
+									type="tel"
+									id="phone"
+									required
+									pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+									placeholder="123-456-7890"
+								/>
+							</div>
+						</div>
+						<div class="form-row">
+							<div>
+								<label for="password">PASSWORD</label>
+								<input
+									type="password"
+									id="password"
+									required
+									minlength="6"
+								/>
+								<p class="password-text"></p>
+							</div>
+							<div>
+								<label for="confirm-password"
+									>CONFIRM PASSWORD</label
+								>
+								<input
+									type="password"
+									id="confirm-password"
+									minlength="6"
+									required
+								/>
+							</div>
+						</div>
+						<button>CREATE ACCOUNT</button>
+					</form>
+					<p>Already have a account? <a href="/">Log in</a></p>
+				</div>
+			</main>
+		</div>
+	</body>
+</html>
